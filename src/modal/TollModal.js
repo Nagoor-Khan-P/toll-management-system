@@ -6,7 +6,7 @@ export default function TollModal({ tollModal, toggle }) {
   return (
     <div>
       <Modal isOpen={tollModal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Add a new toll entry</ModalHeader>
+        <ModalHeader toggle={toggle}>Add a new Toll Entry</ModalHeader>
         <ModalBody>
           <form className="row">
             <div className="mb-1">
@@ -24,7 +24,7 @@ export default function TollModal({ tollModal, toggle }) {
 
             {/* body Part */}
 
-            <label className="starlabel form-label mb-1">Toll Name<span class="required">*</span></label>
+            <label className="starlabel form-label mb-1">Vehicle Fare List<span class="required">*</span></label>
             <Dropdown />
             <Dropdown />
             <Dropdown />

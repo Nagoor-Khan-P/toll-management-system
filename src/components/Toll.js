@@ -8,7 +8,7 @@ export default function Toll() {
   const toggle = () => setTollModal(!tollModal);
 
   const [viecleModal, setViecleModal] = useState(false);
-  const veichleToggle = () => setViecleModal(!tollModal);
+  const veichleToggle = () => setViecleModal(!viecleModal);
   return (
       <>
         <div className="container-fluid my-3">
@@ -40,7 +40,7 @@ export default function Toll() {
               <div className="col">
                 <button
                   className="btn btn-primary ms-2"
-                  
+                  onClick={() => setViecleModal(true)}
                 >
                   Add Viechile Entry
                 </button>
@@ -54,7 +54,7 @@ export default function Toll() {
           </div>
         </div>
         <TollModal tollModal={tollModal} toggle={toggle} />
-        <Veichle />
+        <Veichle viecleModal={viecleModal} veichleToggle={veichleToggle}/>
       </>
   );
 }
